@@ -11,3 +11,7 @@ a {
   color:blue;
   text-decoratin: none;
 }
+nav a {
+  margin-right: 15px;
+  font-weight : bold;
+}
