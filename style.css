@@ -1,8 +1,9 @@
 /* Style CSS */
 body {
-  background-color: #fafafa;
-  font-family: 'Arial',sans-serif;
-  margin: 20px;
+  background-color: #f9f9f9;
+  font-family: 'Poppins',sans-serif;
+  color:#333;
+  margin: 40px;
 }
 h1 {
   color: green;
@@ -14,4 +15,13 @@ a {
 nav a {
   margin-right: 15px;
   font-weight : bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #666;
 }
