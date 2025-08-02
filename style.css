@@ -6,8 +6,8 @@ body {
   margin: 40px;
 }
 .photo-profil {
-  width: 150px;      /* largeur réduite */
-  height: 150px;     /* hauteur réduite */
+  width: 50px;      /* largeur réduite */
+  height: 50px;     /* hauteur réduite */
   object-fit: cover; /* pour bien cadrer la photo */
   border-radius: 50%; /* optionnel : rend la photo ronde */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre douce */
