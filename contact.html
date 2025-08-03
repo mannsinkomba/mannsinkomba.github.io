@@ -11,4 +11,23 @@
     <p>Téléphone: (+226) 77 10 04 58</p>
     <a href="index.html">Page d'accueil </a>
   </body>
+
+    <section id="demande-cv">
+  <h2>📄 Demande de CV</h2>
+  <p>Merci de remplir ce formulaire pour recevoir une copie de mon CV :</p>
+
+  <form action="https://formspree.io/f/xldlwvej" method="POST">
+    <label for="name">Nom :</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Adresse e-mail :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Expliquez brièvement la raison de votre demande..." required></textarea><br><br>
+
+    <button type="submit">Envoyer la demande</button>
+  </form>
+</section>
+
 </html>
