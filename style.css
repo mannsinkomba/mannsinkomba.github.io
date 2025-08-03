@@ -6,11 +6,12 @@ body {
   margin: 40px;
 }
 .photo-profil {
-  width: 50px;      /* largeur réduite */
-  height: 50px;     /* hauteur réduite */
-  object-fit: cover; /* pour bien cadrer la photo */
-  border-radius: 50%; /* optionnel : rend la photo ronde */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ombre douce */
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%; /* Ronde */
+  float: right;       /* Photo à droite du CV */
+  margin: 0 0 20px 20px;
 }
 
 h1 {
