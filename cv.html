@@ -3,6 +3,7 @@
   <html lang="fr">
   <head>
       <meta charset= "UTF-8">
+    <! /* indispensable pour un bon affichage mobile :Sans cette balise, le navigateur mobile fait un zoom « desktop » par défaut et le rendu est souvent mauvais */
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>CV - SAWADOGO Cyprien</title>   
       <! lien vers google font -->
@@ -10,11 +11,19 @@
       <style>
       body {
         font-family: 'Poppins', sans-serif;
-        max-width: 800px;
-        margin: 40px auto;
-        padding: 0 20px:
+        max-width: 800px; /* Limite largeur pour faciliter la lecture */
+        margin: 40px auto;  /* 40px en haut/bas, auto = centré horizontalement */
+        padding: 0 20px: /* marge intérieure gauche et droite */
         color: #333;
         line-height: 1.6;
+      }
+
+            /* Sur petits écrans (mobile) : réduire max-width et augmenter padding */
+      @media screen and (max-width: 600px) {
+        body {
+          max-width: 100%;
+          padding: 0 15px;  /* ou 20px selon l’effet */
+        }
       }
         .header {
       display: flex;
