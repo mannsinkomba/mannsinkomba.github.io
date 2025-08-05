@@ -6,8 +6,8 @@ body {
   margin: 40px;
 }
 .photo-profil {
-  width: 130px;
-  height: 130px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   border-radius: 50%; /* Ronde */
   float: right;       /* Photo à droite du CV */
