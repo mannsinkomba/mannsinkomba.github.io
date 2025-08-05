@@ -19,7 +19,7 @@ body {
 .photo-profil {
   width: 120px;
   height: 120px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 50%; /* Ronde */
   float: right;       /* Photo à droite du CV */
   margin: 0 0 20px 20px;
