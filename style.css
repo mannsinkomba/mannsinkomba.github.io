@@ -2,12 +2,23 @@
 body {
   background-color: #f9f9f9;
   font-family: 'Poppins',sans-serif;
-  color:#333;
-  margin: 40px;
+  color: #333;
+  padding: 0 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  line-height: 1.6;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .photo-profil {
-  width: 250px;
-  height: 250px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
   border-radius: 50%; /* Ronde */
   float: right;       /* Photo à droite du CV */
@@ -15,26 +26,41 @@ body {
 }
 
 h1 {
-  color: green;
+  color: #006600;
+  font-size: 2.5rem;
 }
-a {
-  color:blue;
-  text-decoratin: none;
-}
+
 nav a {
+  color: #006600;
+  text-decoration: none;
   margin-right: 15px;
-  font-weight : bold;
+  font-weight: 600;
 }
+
 nav a:hover {
   text-decoration: underline;
+  color: #004d00;
 }
 
 footer {
-  margin-top: 50px;
-  font-size: 0.9em;
+  margin-top: 40px;
+  font-size: 0.9rem;
   color: #666;
+  text-align: center;
 }
 
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo-profil {
+    margin-top: 15px;
+  }
+}
+  
 #demande-cv {
   max-width: 500px;
   margin: 40px auto;
