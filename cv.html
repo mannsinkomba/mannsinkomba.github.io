@@ -13,7 +13,7 @@
         font-family: 'Poppins', sans-serif;
         max-width: 800px; /* Limite largeur pour faciliter la lecture */
         margin: 40px auto;  /* 40px en haut/bas, auto = centré horizontalement */
-        padding: 0 20px: /* marge intérieure gauche et droite */
+        padding: 0 20px; /* marge intérieure gauche et droite */
         color: #333;
         line-height: 1.6;
       }
@@ -43,16 +43,19 @@
           
     }
       header {
+        background-color: #0073b1; /* bleu LinkedIn */
+        color: white;
         text-align: center;
+        padding: 20px 10px;
         margin-bottom: 30px;
       }
       h1 {
         margin: 0;
         font-weight: 700;
-        color: #008000;
+        color: #0073b1;
       }
       h2 {
-        border-bottom: 2px solid #008000;
+        border-bottom: 2px solid #0073b1;
         padding-bottom: 5px;
         font-weight: 500;
       }
@@ -70,6 +73,10 @@
       ul li {
         margin-bottom: 10px;
       }
+        ul li::before {
+    content: "✔ ";
+    color: #0073b1;  /* bleu LinkedIn */
+    }
 
       footer {
       margin-top: 40px;
