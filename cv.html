@@ -86,17 +86,26 @@
       color: #666;
       text-align: center;
     }
+      </style>
+        <!empecher l'impression
+        <style>
+          @media print {
+            body {
+              display: none;
+            }
+          }
     </style>
-    <!empecher l'impression
-    <style>
-     
-    </style>
-  </head>
-    
-<script>
- 
-</script>
-    
+      </head>
+        
+    <script>
+      window.addEventListener("keydown", function(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === "p") {
+          alert("L'impression est désactivée sur ce CV.");
+          e.preventDefault();
+        }
+      });
+    </script>
+        
     
   <body>
     <div class="header">
