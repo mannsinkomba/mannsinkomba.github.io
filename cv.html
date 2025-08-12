@@ -43,8 +43,8 @@
           
     }
       header {
-        /*background-color: #0073b1;  bleu LinkedIn 
-        color: white;*/
+        background-color: #0073b1;  bleu LinkedIn 
+        color: white;
         text-align: center;
         /*padding: 20px 10px;*/
         margin-bottom: 30px;
@@ -88,10 +88,17 @@
     }
      </style>
     
-        <!empecher l'impression
-
-      </head>
-        
+    </head>
+    
+        <!empecher l'impression 
+      <script>
+    window.addEventListener("keydown", function(e) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "p") {
+        alert("L'impression est désactivée sur ce CV.");
+        e.preventDefault();
+      }
+    });
+    </script>
     
   <body>
     <div class="header">
@@ -100,7 +107,7 @@
         <header>
         <h1>Cyprien SAWADOGO</h1>
         <p>Data Scientist Junior | Formation en Statistique, Analyse de données</p>
-        <p>Email : <a href="mailto:scyprien74@gmail.com" style="text-decoration: none;">cyprien@gmail.com</a><p/>
+        <p>Email : <a href="mailto:scyprien74@gmail.com" style="color: yellow; text-decoration: none;">cyprien@gmail.com</a><p/>
         <p></p>Téléphone : (+226) 77 10 04 58 | 61 13 61 57</p>
       </div>
       <img src="Cyprien_v2.png" alt="Photo de profil" class="photo-profil">
