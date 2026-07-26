@@ -43,10 +43,12 @@ nav a:hover {
 }
 
 footer {
-  margin-top: 40px;
+  /*margin-top: 40px;*/
+  paddin:0 30px;
   font-size: 0.9rem;
   color: #666;
   text-align: center;
+  width: 100%;
 }
 
 @media (max-width: 600px) {
