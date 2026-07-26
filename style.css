@@ -1,33 +1,55 @@
 /* Style CSS */
+
+/* STRUCTURE GLOBALE ET BASE (HAUTEUR FIXE) */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: #f9f9f9;
   font-family: 'Poppins',sans-serif;
   color: #333;
-  padding: 0 20px;
-  max-width: 800px;
-  margin: 40px auto;
   line-height: 1.6;
+  max-width: 800px;
+  /* Centrage horizontal du CV*/
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  
+   /* Grid : Force le footer tout en bas */
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* En-tête, Contenu élastique, Footer */
 }
+
+/* Zone principale qui va s'étirer pour combler le vide */
+main {
+  padding-top: 40px;
+}
+
+/* EN-TÊTE ET NAVIGATION */
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
   .photo-profil {
       width: 250px;
       height: 250px;
-      
       border-radius: 50%;
       margin-left: 20px;
-          
+      object-fit: cover; /* Évite de déformer votre image */    
     }
 
 
 h1 {
   color: #006600;
   font-size: 2.5rem;
+  margin: 0;
 }
 
 nav a {
@@ -43,33 +65,40 @@ nav a:hover {
 }
 
 footer {
-  /*margin-top: 40px;*/
-  /*paddin:0 30px;*/
-  /*font-size: 0.9rem;*/
- /* color: #666;*/
-  /*text-align: center;*/
-  /*width: 100%;*/
-
   font-size: 0.9rem;
   color: #666;
   text-align: center;
   padding: 30px 0;
   width: 100%;
-  
+  border-top: 1px solid #eee; /* Ligne de séparation propre */
+  margin-top: 40px;
 }
 
+/* RESPONSIVE MOBILE (ÉCRANS < 600px) */
 @media (max-width: 600px) {
+
+  body{
+    max-width: 100%;
+  }
+  
   .header {
-    flex-direction: column;
+    flex-direction: column-reverse; /* Met la photo au-dessus du texte sur mobile */
     align-items: center;
     text-align: center;
+    margin-top: 20px;
   }
 
   .photo-profil {
     margin-top: 15px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 180px;  /* Plus petit sur mobile */
+    height: 180px;
   }
 }
-  
+
+/* FORMULAIRE DE DEMANDE DE MON CV */
+
 #demande-cv {
   max-width: 500px;
   margin: 40px auto;
@@ -81,6 +110,7 @@ footer {
 #demande-cv h2 {
   color: #2c3e50;
   text-align: center;
+  margin-top: 0;
 }
 
 #demande-cv input,
@@ -91,6 +121,7 @@ footer {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* Évite que les inputs dépassent du cadre */
 }
 
 #demande-cv button {
@@ -100,6 +131,7 @@ footer {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  width: 100%; /* Plus facile à cliquer sur mobile */
 }
 
 #demande-cv button:hover {
